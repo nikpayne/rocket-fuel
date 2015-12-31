@@ -6,6 +6,7 @@
 
 		<?php rfuel_get_archive_content(); ?>
 
+
 	</article> <!-- end article -->
 
 	<?php endwhile; else : //===============================================================?>

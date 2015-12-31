@@ -9,9 +9,9 @@
 			<?php if ( !is_front_page() ) : ?>
 
 			<h1 class="page-title"><?php the_title(); ?></h1>
-			
+
 			<?php endif; ?>
-			
+
 			<?php if ( has_post_thumbnail() ) : ?>
 
 			<div class="featured-image">
@@ -23,11 +23,21 @@
 			<?php endif; ?>
 
 		</header> <!-- end article header -->
-		
+
 
 		<section class="entry-content">
 
-			<?php the_content(); ?>
+			<!-- <?php the_content(); ?> -->
+
+			<div class="row">
+				<div class="columns medium-12">
+					<?php
+						$blocks = get_field_object("blocks");
+						var_dump($blocks);
+					 ?>
+				</div>
+
+			</div>
 
 		</section> <!-- end article section -->
 
